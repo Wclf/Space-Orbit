@@ -373,6 +373,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ea1c1d1982469a4b851d4d52ff425b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moveClip: {fileID: 8300000, guid: ca8ccacfffb410d46aad779d0dcb7f63, type: 3}
+  _loseClip: {fileID: 8300000, guid: 227c57a948c929b46be8e7b034a24d3a, type: 3}
+  _pointClip: {fileID: 8300000, guid: f90742d4813f57b42abeef64e419fbee, type: 3}
+  _gm: {fileID: 1273787213}
+  _explosionPrefab: {fileID: 0}
+  _scoreParticlePrefab: {fileID: 0}
+  _rotateSpeed: 180
+  _rotateTranform: {fileID: 1187383627}
+  _startRotateRadius: 4
+  _moveTime: 0.64
+  _rotateRadius:
+  - 4
+  - 8
+  - 12
+  - 8
 --- !u!199 &20212068
 ParticleSystemRenderer:
   serializedVersion: 6
