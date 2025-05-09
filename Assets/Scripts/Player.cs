@@ -14,7 +14,9 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        canClick = false;
+        canClick = true;
+        level = 0;
+        currentRotateRadius = _startRotateRadius;
     }
 
     private void Update()
@@ -44,6 +46,7 @@ public class Player : MonoBehaviour
             Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
             SoungManager.instance.PlaySound(_loseClip);
             _gm.GameEnded();
+            Destroy(gameObject);
             return;
         }
 
